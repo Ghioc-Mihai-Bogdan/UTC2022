@@ -13,7 +13,7 @@ html, body, h1 {
     height: 100vh;
     background-color: bisque;
     text-align: center;
-    padding: 100px;
+    padding: 50px 100px;
 }
 
 .list {
@@ -35,4 +35,11 @@ html, body, h1 {
 
 .ingredients {
     color: rgb(173, 113, 0);
+}
+
+.picture {
+    width: 200px;
+    transform: rotate(90deg);
+    border-radius: 10px;
+    border: solid 2px white;
 }
