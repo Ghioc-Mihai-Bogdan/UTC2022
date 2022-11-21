@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Bistro</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="code.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="main-content">
-        <h1>Welcome to my restaurant</h1>
-        <h2>Best food in town</h2>
+      <h1 id="restaurant-name">Welcome to my restaurant</h1>
+      <h2>Best food in town</h2>
 
-        <h3>- Appetizers -</h3>
-        <div class="list">
-            <ol>
-                <li class="meal">
-                    <div class="meal-title">Onion rings <span class="price">12$</span></div>
-                    <div class="ingredients">Onion, oil, flour, salt</div>
-                </li>
-                <li class="meal">
-                    <div class="meal-title">Onion rings <span class="price">12$</span></div>
-                    <div class="ingredients">Onion, oil, flour, salt</div>
-                </li>
-                <li class="meal">
-                    <div class="meal-title">Onion rings <span class="price">12$</span></div>
-                    <div class="ingredients">Onion, oil, flour, salt</div>
-                </li>                
-            </ol>
-        </div>
-        <div class="form-section">
-            <input type="text" class="restaurant-name">
-            <button class="change-button">change restaurant name</button>
-        </div>
-        <img class="picture" src="https://i0.wp.com/kristineskitchenblog.com/wp-content/uploads/2022/03/air-fryer-onion-rings-0775.jpg?w=1200&ssl=1"
-            alt="food photo" />
+      <h3>- Appetizers -</h3>
+      <div class="list">
+        <ol>
+          <li class="meal">
+            <div class="meal-title">
+              Onion rings <span class="price">12$</span>
+            </div>
+            <div class="ingredients">Onion, oil, flour, salt</div>
+          </li>
+          <li class="meal">
+            <div class="meal-title">
+              Onion rings <span class="price">12$</span>
+            </div>
+            <div class="ingredients">Onion, oil, flour, salt</div>
+          </li>
+          <li class="meal">
+            <div class="meal-title">
+              Onion rings <span class="price">12$</span>
+            </div>
+            <div class="ingredients">Onion, oil, flour, salt</div>
+          </li>
+        </ol>
+      </div>
+      <div class="form-section">
+        <input type="text" class="restaurant-name" id="restaurant-name-input" />
+        <button class="change-button" onClick="changeRestaurantName()">
+          change restaurant name
+        </button>
+      </div>
+      <img
+        class="picture"
+        src="https://i0.wp.com/kristineskitchenblog.com/wp-content/uploads/2022/03/air-fryer-onion-rings-0775.jpg?w=1200&ssl=1"
+        alt="food photo"
+      />
     </div>
-</body>
-
+  </body>
 </html>
