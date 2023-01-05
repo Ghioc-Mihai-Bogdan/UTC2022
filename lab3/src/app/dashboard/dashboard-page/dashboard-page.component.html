@@ -3,5 +3,14 @@
     *ngFor="let game of gameList"
     [game]="game"
     (clickedMore)="navigateToGamePage($event, game)"
-  ></app-game-card>
+    
+  >
+  </app-game-card>
+  <!-- <input type="text" [(ngModel)]="searchText" (keyup)="filterGames()"> -->
 </div>
+
+<button (click)="sortGameList1()"
+  style="background: rgba(2, 175, 89, 0.822);color:rgb(0, 0, 0);">A-Z</button>
+  <button (click)="sortGameList2()"
+  style="background: rgba(175, 2, 25, 0.685);color:rgb(0, 0, 0);">Z-A</button>
+ 

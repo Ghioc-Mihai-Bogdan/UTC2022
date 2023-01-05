@@ -31,6 +31,38 @@ export class DashboardPageComponent implements OnInit {
     },
   ];
 
+  searchText = '';
+
+  filterGames() {
+    return this.gameList.filter(gameList => {
+      return gameList.title.toLowerCase().includes(this.searchText.toLowerCase());
+    });
+  }
+
+  sortGameList1() {
+    this.gameList.sort((a, b) => {
+      if (a.title < b.title) {
+        return -1;
+      }
+      if (a.title > b.title) {
+        return 1;
+      }
+      return 0;
+    });
+  }
+
+  sortGameList2() {
+    this.gameList.sort((a, b) => {
+      if (a.title < b.title) {
+        return 1;
+      }
+      if (a.title > b.title) {
+        return -1;
+      }
+      return 0;
+    });
+  }
+
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
